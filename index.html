@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS Paint</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+
+	<div class="wrap" id="wrap">
+
+		<img src="./img/settings.png" class="settings" id="settings" width="40px" height="40px">
+
+		<div class="settings_popup" id="settings_popup">
+			
+			<div class="settings_body">
+				
+				<div class="settings_content">
+
+					<img src="./img/close.png" width="30px" height="30px" class="close_icon" id="close_icon">
+					
+					<div class="settings_title">Налаштування</div>
+
+					<div class="hot_buttons">
+						
+						<div class="hot_buttons_item"><span class="hot_buttons_item_span">S</span> - Зберегти малюнок</div>
+						<div class="hot_buttons_item"><span class="hot_buttons_item_span">C</span> - Очистити полотно</div>
+						<div class="hot_buttons_item"><span class="hot_buttons_item_span">R</span> - Відтворити малюнок</div>
+
+					</div>
+
+					<div class="settings_title_replace">Швидкість відтворення малюнка: <input type="number" min="0" max="50" value="10" step="10" class="input_replay" id="input_replay"> мс</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<canvas class="canvas" id="canvas"></canvas>
+
+		<div class="sections colors">
+			
+			<div class="colors_item colors_item_black sections_item_active" id="color_black"></div>
+			<div class="colors_item colors_item_grey" id="color_grey"></div>
+			<div class="colors_item colors_item_red" id="color_red"></div>
+			<div class="colors_item colors_item_green" id="color_green"></div>
+			<div class="colors_item colors_item_blue" id="color_blue"></div>
+			<div class="colors_item colors_item_yellow" id="color_yellow"></div>
+			<input type="color" class="colors_item" id="color_input" name="">
+
+		</div>
+
+		<div class="sections line_width">
+
+			<div class="line_width_circle">
+			
+				<div class="line_width_item line_width_item_1" id="line_width_1"></div>
+				<div class="line_width_item line_width_item_3" id="line_width_3"></div>
+				<div class="line_width_item line_width_item_5" id="line_width_5"></div>
+				<div class="line_width_item line_width_item_10 sections_item_active" id="line_width_10"></div>
+
+			</div>
+
+			<div class="line_width_square">
+				
+				<div class="line_width_square_item line_width_square_item_1" id="line_width_square_1"></div>
+				<div class="line_width_square_item line_width_square_item_3" id="line_width_square_3"></div>
+				<div class="line_width_square_item line_width_square_item_5" id="line_width_square_5"></div>
+				<div class="line_width_square_item line_width_square_item_10" id="line_width_square_10"></div>
+
+			</div>
+
+		</div>
+
+		<div class="sections sections_shadow rubber" id="sections_rubber">
+			
+			<img src="./img/eraser.png" width="40px" height="40px" class="rubber_item" id="rubber">
+
+		</div>
+
+		<div class="sections sections_shadow filling" id="sections_filling">
+			
+			<img src="./img/fill.png" width="40px" height="40px" class="rubber_item" id="filling">
+
+		</div>
+
+		<div class="sections sections_shadow brush" id="sections_brush">
+			
+			<img src="./img/brush.png" width="40px" height="40px" class="rubber_item" id="brush">
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
