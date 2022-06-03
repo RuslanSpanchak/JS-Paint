@@ -146,6 +146,8 @@ document.addEventListener("keydown", function(e) {
 
 color_black.onclick = function() {
 
+	ctx.beginPath()
+
 	color = "black";
 	ctx.strokeStyle = color;
 	ctx.fillStyle = color;
@@ -165,6 +167,8 @@ color_black.onclick = function() {
 }
 
 color_grey.onclick = function() {
+
+	ctx.beginPath()
 
 	color = "grey";
 	ctx.strokeStyle = color;
@@ -186,6 +190,8 @@ color_grey.onclick = function() {
 
 color_red.onclick = function() {
 
+	ctx.beginPath()
+
 	color = "red";
 	ctx.strokeStyle = color;
 	ctx.fillStyle = color;
@@ -205,6 +211,8 @@ color_red.onclick = function() {
 }
 
 color_green.onclick = function() {
+
+	ctx.beginPath()
 
 	color = "green";
 	ctx.strokeStyle = color;
@@ -226,6 +234,8 @@ color_green.onclick = function() {
 
 color_blue.onclick = function() {
 
+	ctx.beginPath()
+
 	color = "blue";
 	ctx.strokeStyle = color;
 	ctx.fillStyle = color;
@@ -246,6 +256,8 @@ color_blue.onclick = function() {
 
 color_yellow.onclick = function() {
 
+	ctx.beginPath()
+
 	color = "yellow";
 	ctx.strokeStyle = color;
 	ctx.fillStyle = color;
@@ -265,6 +277,8 @@ color_yellow.onclick = function() {
 }
 
 color_input.onchange = function() {
+
+	ctx.beginPath()
 
 	color = color_input.value;
 	ctx.strokeStyle = color;
@@ -290,6 +304,11 @@ line_width_1.onclick = function() {
 	$("#line_width_5").removeClass("sections_item_active")
 	$("#line_width_10").removeClass("sections_item_active")
 
+	$("#line_width_square_1").removeClass("sections_item_active")
+	$("#line_width_square_3").removeClass("sections_item_active")
+	$("#line_width_square_5").removeClass("sections_item_active")
+	$("#line_width_square_10").removeClass("sections_item_active")
+
 	$(".line_width").css("height", "50px")
 	$(".line_width_square").css("display", "none")
 
@@ -313,6 +332,11 @@ line_width_3.onclick = function() {
 	$("#line_width_3").addClass("sections_item_active")
 	$("#line_width_5").removeClass("sections_item_active")
 	$("#line_width_10").removeClass("sections_item_active")
+
+	$("#line_width_square_1").removeClass("sections_item_active")
+	$("#line_width_square_3").removeClass("sections_item_active")
+	$("#line_width_square_5").removeClass("sections_item_active")
+	$("#line_width_square_10").removeClass("sections_item_active")
 
 	$(".line_width").css("height", "50px")
 	$(".line_width_square").css("display", "none")
@@ -338,6 +362,11 @@ line_width_5.onclick = function() {
 	$("#line_width_5").addClass("sections_item_active")
 	$("#line_width_10").removeClass("sections_item_active")
 
+	$("#line_width_square_1").removeClass("sections_item_active")
+	$("#line_width_square_3").removeClass("sections_item_active")
+	$("#line_width_square_5").removeClass("sections_item_active")
+	$("#line_width_square_10").removeClass("sections_item_active")
+
 	$(".line_width").css("height", "50px")
 	$(".line_width_square").css("display", "none")
 
@@ -361,6 +390,11 @@ line_width_10.onclick = function() {
 	$("#line_width_3").removeClass("sections_item_active")
 	$("#line_width_5").removeClass("sections_item_active")
 	$("#line_width_10").addClass("sections_item_active")
+
+	$("#line_width_square_1").removeClass("sections_item_active")
+	$("#line_width_square_3").removeClass("sections_item_active")
+	$("#line_width_square_5").removeClass("sections_item_active")
+	$("#line_width_square_10").removeClass("sections_item_active")
 
 	$(".line_width").css("height", "50px")
 	$(".line_width_square").css("display", "none")
@@ -389,6 +423,11 @@ line_width_square_1.onclick = function() {
 	$("#line_width_square_5").removeClass("sections_item_active")
 	$("#line_width_square_10").removeClass("sections_item_active")
 
+	$("#line_width_1").removeClass("sections_item_active")
+	$("#line_width_3").removeClass("sections_item_active")
+	$("#line_width_5").removeClass("sections_item_active")
+	$("#line_width_10").removeClass("sections_item_active")
+
 	$("#sections_brush").css("background-color", "#999")
 	$("#sections_brush").css("bottom", "15px")
 	$("#sections_brush").css("left", "645px")
@@ -413,6 +452,11 @@ line_width_square_3.onclick = function() {
 	$("#line_width_square_5").removeClass("sections_item_active")
 	$("#line_width_square_10").removeClass("sections_item_active")
 
+	$("#line_width_1").removeClass("sections_item_active")
+	$("#line_width_3").removeClass("sections_item_active")
+	$("#line_width_5").removeClass("sections_item_active")
+	$("#line_width_10").removeClass("sections_item_active")
+
 	$("#sections_brush").css("background-color", "#999")
 	$("#sections_brush").css("bottom", "15px")
 	$("#sections_brush").css("left", "645px")
@@ -434,6 +478,11 @@ line_width_square_5.onclick = function() {
 	$("#line_width_square_3").removeClass("sections_item_active")
 	$("#line_width_square_5").addClass("sections_item_active")
 	$("#line_width_square_10").removeClass("sections_item_active")
+
+	$("#line_width_1").removeClass("sections_item_active")
+	$("#line_width_3").removeClass("sections_item_active")
+	$("#line_width_5").removeClass("sections_item_active")
+	$("#line_width_10").removeClass("sections_item_active")
 
 	$("#sections_brush").css("background-color", "#999")
 	$("#sections_brush").css("bottom", "15px")
@@ -458,6 +507,11 @@ line_width_square_10.onclick = function() {
 	$("#line_width_square_3").removeClass("sections_item_active")
 	$("#line_width_square_5").removeClass("sections_item_active")
 	$("#line_width_square_10").addClass("sections_item_active")
+
+	$("#line_width_1").removeClass("sections_item_active")
+	$("#line_width_3").removeClass("sections_item_active")
+	$("#line_width_5").removeClass("sections_item_active")
+	$("#line_width_10").removeClass("sections_item_active")
 
 	$("#sections_brush").css("background-color", "#999")
 	$("#sections_brush").css("bottom", "15px")
@@ -512,6 +566,8 @@ rubber.onclick = function() {
 		$("#sections_figures").css("box-shadow", "3px 3px 0px #888")
 
 		$(".line_width").css("height", "50px")
+		$(".line_width_square").css("display", "none")
+		$(".line_width_item").css("margin", "0px 5px")
 
 		rubber_btn = 1
 		fill = 0
@@ -597,6 +653,8 @@ filling.onclick = function() {
 		$("#line_width_10").addClass("sections_item_active")
 
 		$(".line_width").css("height", "50px")
+		$(".line_width_square").css("display", "none")
+		$(".line_width_item").css("margin", "0px 5px")
 
 		fill = 1
 		rubber_btn = 0
@@ -661,6 +719,10 @@ brush.onclick = function() {
 
 	} else if (brush_btn === 1) {
 
+		$(".line_width").css("height", "50px")
+		$(".line_width_square").css("display", "none")
+		$(".line_width_item").css("margin", "0px 5px")
+
 		$("#sections_brush").css("background-color", "#999")
 		$("#sections_brush").css("bottom", "15px")
 		$("#sections_brush").css("left", "645px")
@@ -720,6 +782,10 @@ figures.onclick = function() {
 		$("#sections_brush").css("bottom", "15px")
 		$("#sections_brush").css("left", "645px")
 		$("#sections_brush").css("box-shadow", "3px 3px 0px #888")
+
+		$(".line_width").css("height", "50px")
+		$(".line_width_square").css("display", "none")
+		$(".line_width_item").css("margin", "0px 5px")
 
 		figures_btn = 1
 		rubber_btn = 0
