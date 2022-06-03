@@ -96,6 +96,17 @@
 	font-weight: 900;
 }
 
+.hot_buttons_text {
+	font-size: 25px;
+	font-family: monospace;
+
+	margin: 3px 0px;
+}
+
+.hot_buttons_text_span {
+	font-weight: 900;
+}
+
 .settings_title_replace {
 	font-size: 25px;
 	font-weight: 900;
@@ -289,4 +300,8 @@
 
 .brush {
 	left: 645px;
+}
+
+.figures {
+	left: 705px;
 }
