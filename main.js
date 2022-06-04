@@ -146,6 +146,9 @@ document.addEventListener("keydown", function(e) {
 
 color_black.onclick = function() {
 
+	$(".line_width_item").css("background-color", "black")
+	$(".line_width_square_item").css("background-color", "black")
+
 	ctx.beginPath()
 
 	color = "black";
@@ -168,9 +171,12 @@ color_black.onclick = function() {
 
 color_grey.onclick = function() {
 
+	$(".line_width_item").css("background-color", "lightgrey")
+	$(".line_width_square_item").css("background-color", "lightgrey")
+
 	ctx.beginPath()
 
-	color = "grey";
+	color = "lightgrey";
 	ctx.strokeStyle = color;
 	ctx.fillStyle = color;
 
@@ -189,6 +195,9 @@ color_grey.onclick = function() {
 }
 
 color_red.onclick = function() {
+
+	$(".line_width_item").css("background-color", "red")
+	$(".line_width_square_item").css("background-color", "red")
 
 	ctx.beginPath()
 
@@ -212,6 +221,9 @@ color_red.onclick = function() {
 
 color_green.onclick = function() {
 
+	$(".line_width_item").css("background-color", "green")
+	$(".line_width_square_item").css("background-color", "green")
+
 	ctx.beginPath()
 
 	color = "green";
@@ -233,6 +245,9 @@ color_green.onclick = function() {
 }
 
 color_blue.onclick = function() {
+
+	$(".line_width_item").css("background-color", "blue")
+	$(".line_width_square_item").css("background-color", "blue")
 
 	ctx.beginPath()
 
@@ -256,6 +271,9 @@ color_blue.onclick = function() {
 
 color_yellow.onclick = function() {
 
+	$(".line_width_item").css("background-color", "yellow")
+	$(".line_width_square_item").css("background-color", "yellow")
+
 	ctx.beginPath()
 
 	color = "yellow";
@@ -277,6 +295,9 @@ color_yellow.onclick = function() {
 }
 
 color_input.onchange = function() {
+
+	$(".line_width_item").css("background-color", color_input.value)
+	$(".line_width_square_item").css("background-color", color_input.value)
 
 	ctx.beginPath()
 
