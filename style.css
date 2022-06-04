@@ -231,6 +231,7 @@
 	margin: 0px 5px;
 
 	cursor: pointer;
+	transition: .1s linear;
 }
 
 .line_width_item_1 {
@@ -260,6 +261,7 @@
 	margin: 0px 5px;
 
 	cursor: pointer;
+	transition: .1s linear;
 }
 
 .line_width_square_item_1 {
